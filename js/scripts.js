@@ -6,11 +6,12 @@ $(document).ready(function(){
     for (i=0;i<=userInput;i++) {
       arr.push(i);
 
-      if ("3".includes(arr[i])){
+
+      if (arr[i].toString().includes("3")){
         arr.splice(i,1,"I'm sorry, Dave. I'm afraid I can't do that.")
-      } else if ("2".includes(arr[i])){
-        arr.splice(i,1,"Boob!")
-      } else if ("1".includes(arr[i])){
+      } else if (arr[i].toString().includes("2")){
+        arr.splice(i,1,"Boop!")
+      } else if (arr[i].toString().includes("1")){
         arr.splice(i,1,"Beep!")
       }
     };
